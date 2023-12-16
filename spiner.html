@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        .kolecko {
+            width: 100px; 
+            height: 100px;
+            -webkit-animation: tocit 1s infinite linear;
+            animation: tocit 1s infinite linear;
+            border-radius: 50%;
+            border-bottom: 6px solid rgb(0, 255, 242);
+        }
+        @-webkit-keyframes tocit {
+            to {-webkit-transform: rotate(360deg)}
+        }
+        @keyframes tocit {
+            to {transform: rotate(360deg)}
+        }
+        </style>
+    <svg class="kolecko" height="200px" width="200px">
+        <circle cx="50" cy="50" r="50" style="fill:none; stroke:rgb(0, 0, 255); stroke-width:9" />
+     </svg>
+    
+
+</body>
+</html>
